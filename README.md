@@ -132,7 +132,7 @@ Learning JavaScript in Depth by Examples
     - Delete items from end using `Array.prototype.pop()`
 
 13. **Regular Expressions**
-    - Regular expressions deep dive
+    - [Regular expressions deep dive](./Regular%20Expressions/understanding_internals.MD)
         - Literals
         - Metacharacters
         - Character classes
@@ -159,7 +159,7 @@ Learning JavaScript in Depth by Examples
     - Replace a string based on regex `String.prototype.replace()`
 
 14. **Strings**
-    - Strings deep dive
+    - [Strings deep dive](./Strings/understanding_internals.MD)
         - ASCII encoding
         - Extended ASCII encoding
         - Unicode encoding (UTF-8, UTF-16, UTF-32)
