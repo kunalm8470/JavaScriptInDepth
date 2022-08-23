@@ -61,3 +61,4 @@
 - [Joel Spolky's blog on understanding Unicode at a very deep level](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
 - [YouTube video to understand string encodings](https://www.youtube.com/watch?v=ut74oHojxqo)
 - [YouTube video to understand Unicode encodings at a deep level](https://www.youtube.com/watch?v=bbkUn0o3L1Y&t=839s)
+- [Good blog post to understand Unicode encodings](https://betterexplained.com/articles/unicode/)
