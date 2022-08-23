@@ -1,6 +1,4 @@
-## JavaScriptInDepth
-
-Learning JavaScript in Depth by Examples
+# Learning JavaScript in Depth by Examples
 
 1. **JavaScript Objects, Comments and Statements**
     - Object literal syntax
