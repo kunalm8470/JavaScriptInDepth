@@ -220,9 +220,9 @@ Learning JavaScript in Depth by Examples
     - Delete item into WeakMap `WeakMap.prototype.delete()`
 
 19. **Symbols**
-    - Symbol constructor `new Symbol()`
+    - Symbol constructor `Symbol()`
+    - Global symbol registry
     - Create a symbol if it doesn't exist `Symbol.prototype.for()` 
-    - Global symbols
     - Get the name of the key associated to a symbol `Symbol.prototype.keyFor()`
 
 20. **Scheduling**
