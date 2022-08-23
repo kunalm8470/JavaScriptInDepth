@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Set Interval Demo</title>
+</head>
+<body>
+
+<p class="count"></p>
+
+<button class="pause">Pause</button>
+<button class="play">Play</button>
+
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        let count = 0;
+
+        let isPaused = false;
+
+        const pRef = document.querySelector('.count');
+        const pauseBtnRef = document.querySelector('.pause');
+        const playBtnRef = document.querySelector('.play');
+
+        setInterval(function() {
+            if (isPaused) {
+                count++;
+
+                pRef.innerHTML = count;
+            }
+        }, 1000);
+
+        pauseBtnRef.addEventListener('click', function(e) {
+            isPaused = false;
+        });
+
+        playBtnRef.addEventListener('click', function(e) {
+            isPaused = true;
+        });
+    });
+</script>
+
+</body>
+</html>
