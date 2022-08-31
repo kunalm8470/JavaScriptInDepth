@@ -54,7 +54,7 @@
     - Immediately Invoked Function Expression (IIFE)
     - Revealing module pattern
 
-9.  **Destructuring**
+9. **Destructuring**
     - Object destructure
     - Array destructure
     - rest and spread operator
@@ -63,40 +63,41 @@
     - Serializing a javascript object into a JSON string `JSON.stringify()`
     - Deserializing a JSON string to a Javascript object using `JSON.parse()`
 
-11.  **Date and Time**
+11. **Date and Time**
+
 - Time zones and UTC time
 - Daylight saving time (DST)
 - ISO-8601 format
 - `Date.prototype.now` and `Date.prototype.getTime()`
 - Parsing string dates to date objects `Date.prototype.parse()`
 - Date getter methods
-    - Recommended way to get year from date `Date.prototype.getFullYear()`
-    - Get the month part from date `Date.prototype.getMonth()`
-    - Get the day part from date `Date.prototype.getDate()`
+  - Recommended way to get year from date `Date.prototype.getFullYear()`
+  - Get the month part from date `Date.prototype.getMonth()`
+  - Get the day part from date `Date.prototype.getDate()`
 - Time getter methods
-    - Get the hour part from date `Date.prototype.getHours()`
-    - Get the minute part from date `Date.prototype.getMinutes()`
-    - Get the seconds part from date `Date.prototype.getSeconds()`
-    - Get the milliseconds part from date `Date.prototype.getMilliseconds()`
+  - Get the hour part from date `Date.prototype.getHours()`
+  - Get the minute part from date `Date.prototype.getMinutes()`
+  - Get the seconds part from date `Date.prototype.getSeconds()`
+  - Get the milliseconds part from date `Date.prototype.getMilliseconds()`
 - Date setter methods
-    - Set the year to a date `Date.prototype.setFullYear()`
-    - Set the month to a date `Date.prototype.setMonth()`
-    - Set the day to a date `Date.prototype.setDate()`
+  - Set the year to a date `Date.prototype.setFullYear()`
+  - Set the month to a date `Date.prototype.setMonth()`
+  - Set the day to a date `Date.prototype.setDate()`
 - Time setter methods
-    - Set the hour part to a date `Date.prototype.setHours()`
-    - Set the minutes part to a date `Date.prototype.setMinutes()`
-    - Set the seconds part to a date `Date.prototype.setSeconds()`
-    - Set the milliseconds part to a date `Date.prototype.setMilliseconds()`
+  - Set the hour part to a date `Date.prototype.setHours()`
+  - Set the minutes part to a date `Date.prototype.setMinutes()`
+  - Set the seconds part to a date `Date.prototype.setSeconds()`
+  - Set the milliseconds part to a date `Date.prototype.setMilliseconds()`
 - Formatting Date and Time
-    - Extract the date part only as a string from a date object `Date.prototype.toDateString()`
-    - Extract the time part only as a string from a date object `Date.prototype.toTimeString()`
-    - Format date as a ISO 8601 string `Date.prototype.toISOString()` and `Date.prototype.toJSON()`
-    - Formatting into locale specific strings `Date.prototype.toLocaleString()`, `Date.prototype.toLocaleDateString()` and `Date.prototype.toLocaleTimeString()`
-    - International Date and Time Formatting
-    - Format locale aware date `Intl.DateTimeFormat.prototype.format()`
+  - Extract the date part only as a string from a date object `Date.prototype.toDateString()`
+  - Extract the time part only as a string from a date object `Date.prototype.toTimeString()`
+  - Format date as a ISO 8601 string `Date.prototype.toISOString()` and `Date.prototype.toJSON()`
+  - Formatting into locale specific strings `Date.prototype.toLocaleString()`, `Date.prototype.toLocaleDateString()` and `Date.prototype.toLocaleTimeString()`
+  - International Date and Time Formatting
+  - Format locale aware date `Intl.DateTimeFormat.prototype.format()`
 - Benchmarking execution times
-    - Benchmark in browser and Node.js `performance.now()`
-    - Benchmark in Node.js `process.hrtime.bigint()`
+  - Benchmark in browser and Node.js `performance.now()`
+  - Benchmark in Node.js `process.hrtime.bigint()`
 
 12. **Arrays**
     - Get length of an array `Array.prototype.length`
@@ -148,7 +149,7 @@
             - Positive and Negative lookbehind
         - Different flags in Regular expressions
     - Defining a regular expression using regex literal `/[0-9]/`
-    - Defining a regular expression using RegExp constructor `new RegExp()` 
+    - Defining a regular expression using RegExp constructor `new RegExp()`
     - Test if a string matches the specified regex or not `RegExp.prototype.test()`
     - Find all matches of the given term using Regex in the given string `RegExp.prototype.exec()`
     - Find the first found index and test if the string matches the regex `String.prototype.search()`
@@ -220,7 +221,7 @@
 19. **Symbols**
     - Symbol constructor `Symbol()`
     - Global symbol registry
-    - Create a symbol if it doesn't exist `Symbol.prototype.for()` 
+    - Create a symbol if it doesn't exist `Symbol.prototype.for()`
     - Get the name of the key associated to a symbol `Symbol.prototype.keyFor()`
 
 20. **Scheduling**
@@ -230,7 +231,7 @@
 21. **ES6 Classes**
     - Creating custom classes using `class` keyword
     - Property Getter and Setter using `get` and `set`
-    - Private fields in class by marking field with '#' `#field` 
+    - Private fields in class by marking field with '#' `#field`
     - Static fields
     - Inheriting custom classes
 
