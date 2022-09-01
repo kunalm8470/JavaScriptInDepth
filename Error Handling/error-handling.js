@@ -147,7 +147,7 @@ function d() {
     try {
         c();
     } catch(err) {
-        throw err; //Re-throw the error with the error object
+        console.error('Preserved error', err); //Re-throw the error with the error object
     }
 }
 
@@ -171,7 +171,7 @@ function d1() {
     c1();
 }
 
-d1();
+// d1();
 
 // Handle the uncaught errors (Globally caught)
 // Case 1. In browser
