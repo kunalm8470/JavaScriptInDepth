@@ -114,7 +114,7 @@ sum(Number.MAX_SAFE_INTEGER + 1, Number.MAX_SAFE_INTEGER + 1);
 sum(2, 2);
 
 /*
-    Error object will have 3 properties -
+    Error object will have these properties -
     {
         "message": "<Short error message>",
         "stack": "<Stack trace>"
