@@ -3,12 +3,11 @@
 const sleep = function(seconds) {
     // To make a new promise, instantiate a Promise constructor
     return new Promise((resolve, reject) => {
-        // Executor promise
+        // Body of the promise is called Promise Executor
 
-        // It will have 2 callbacks
-        // 1. resolve callback
-        // 2. reject callback
-
+        // Promise constructor will have 2 callbacks -
+        // 1. resolve callback (Used to resolve a promise)
+        // 2. reject callback (Used to reject a promise)
         setTimeout(function() {
             return resolve();
         }, seconds * 1000);
@@ -40,7 +39,7 @@ promise1()
 
 /*
     For client side, if no corresponding catch block is found
-    the unhandlerejection event will be thrown
+    the unhandlerejection event will be thrown. Which can be listened on a global level.
 
     window.addEventListener('unhandledrejection', function(event) {
         const { promise, reason } = event;
