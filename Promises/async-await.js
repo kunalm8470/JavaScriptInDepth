@@ -57,8 +57,85 @@ const makeTea = async () => {
     }
 };
 
+// Caller methods should marked as async all the way up to top
 (async() => {
     console.log(await makeTea());
+})();
+
+// One alternative is writing then in the caller method
+(() => {
+    makeTea()
+    .then((teaResult) => {
+        console.log(teaResult);
+    });
+})();
+
+
+// Promise<number>
+const asyncMethod = async () => {
+    return 5;
+};
+
+/*
+    Above code is similar to writing this -
+
+    const asyncMethod = () => {
+        return new Promise((resolve, reject) => {
+            return resolve(5);
+        });
+    };
+*/
+
+const asyncMethod2 = async () => {
+    throw new Error('Async error');
+};
+
+/*
+    Above code is similar to writing this -
+    
+    const asyncMethod = () => {
+        return new Promise((resolve, reject) => {
+            return reject(throw new Error('Async error'));
+        });
+    };
+*/
+
+class SomeClass {
+    // Class methods can also be async
+    async someAsyncInstanceMethod() {
+        return 5;
+    }
+}
+
+const s1 = new SomeClass();
+
+// Top level awaits
+//await s1.someAsyncInstanceMethod();
+
+//---------------------------------------------------------------------
+// To make a custom promise
+// make a thenable
+// A thenable is just a class/constructor function with a then method
+// The then method will have two callbacks "resolve" and "reject".
+
+class Thenable {
+    constructor(num) {
+        this.num = num;
+    }
+
+    // Override the then method to make a custom promise
+    then(resolve, reject) {
+        setTimeout(() => {
+            resolve(this.num);
+        }, 2000);
+    }
+}
+
+(async() => {
+    // Custom promise
+    const result = await new Thenable(2);
+
+    console.log(result);
 })();
 
 debugger;
