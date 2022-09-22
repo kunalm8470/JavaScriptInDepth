@@ -1,0 +1,4 @@
+AMD - Asynchronous Module Definition (Legacy)
+UMD - Universal Module Definition (Legacy)
+CommonJS - Node.js (Server side)
+ES6 Modules
