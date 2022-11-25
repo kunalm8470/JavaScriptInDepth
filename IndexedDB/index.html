@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IndexedDB demo</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="row">
+
+    <div class="col-md-4">
+        <fieldset>
+            <legend>Employee Form</legend>
+        
+            <form id="frmEmployee">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Name" required />
+                <br>
+        
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email" required />
+                <br>
+        
+                <label for="age">Age</label>
+                <input id="age" type="number" placeholder="age" required />
+                <br>
+        
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </form>
+        </fieldset>
+
+        <br>
+
+        <button id="btnInitialize" class="btn btn-primary">Initialize IndexedDB</button>
+        <button id="btnShowData" class="btn btn-success">Show data</button>
+    </div>
+
+    <div class="col-md-8">
+        <fieldset>
+            <legend>IndexedDB employees</legend>
+
+            <table id="tblEmployees" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
