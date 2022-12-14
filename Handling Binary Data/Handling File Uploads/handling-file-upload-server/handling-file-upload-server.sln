@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{336BCCF3-17E4-4931-B859-4524352007C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileUpload.Server", "src\FileUpload.Server\FileUpload.Server.csproj", "{D51E7825-5107-4D98-93F3-5D52F03E9CB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D51E7825-5107-4D98-93F3-5D52F03E9CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51E7825-5107-4D98-93F3-5D52F03E9CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51E7825-5107-4D98-93F3-5D52F03E9CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51E7825-5107-4D98-93F3-5D52F03E9CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D51E7825-5107-4D98-93F3-5D52F03E9CB2} = {336BCCF3-17E4-4931-B859-4524352007C1}
+	EndGlobalSection
+EndGlobal
